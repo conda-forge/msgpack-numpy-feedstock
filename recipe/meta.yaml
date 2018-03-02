@@ -1,6 +1,6 @@
 {% set name = "msgpack-numpy" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "afc603c7cf8497fb125a8c8c713518a004e9662101f088e3d4fcf7688b08eeb3" %}
+{% set version = "0.4.3" %}
+{% set sha256 = "9d6da0bbb04d7cab2bf9f08f78232c954f00ac95cf2384149e779a31ce859126" %}
 
 package:
   name: {{ name|lower }}

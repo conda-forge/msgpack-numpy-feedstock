@@ -1,25 +1,22 @@
-{% set name = "msgpack-numpy" %}
 {% set version = "0.4.3" %}
-{% set sha256 = "9d6da0bbb04d7cab2bf9f08f78232c954f00ac95cf2384149e779a31ce859126" %}
 
 package:
-  name: {{ name|lower }}
+  name: msgpack-numpy
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/m/msgpack-numpy/msgpack-numpy-{{ version }}.tar.gz
+  sha256: 9d6da0bbb04d7cab2bf9f08f78232c954f00ac95cf2384149e779a31ce859126
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - numpy >=1.9.0

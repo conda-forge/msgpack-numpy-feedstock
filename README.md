@@ -18,12 +18,15 @@ of Python's native complex data types is also supported.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/msgpack-numpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msgpack-numpy-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/msgpack-numpy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/msgpack-numpy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msgpack-numpy/badges/version.svg)](https://anaconda.org/conda-forge/msgpack-numpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msgpack-numpy/badges/downloads.svg)](https://anaconda.org/conda-forge/msgpack-numpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-msgpack--numpy-green.svg)](https://anaconda.org/conda-forge/msgpack-numpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/msgpack-numpy.svg)](https://anaconda.org/conda-forge/msgpack-numpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/msgpack-numpy.svg)](https://anaconda.org/conda-forge/msgpack-numpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/msgpack-numpy.svg)](https://anaconda.org/conda-forge/msgpack-numpy) |
 
 Installing msgpack-numpy
 ========================

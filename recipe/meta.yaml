@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - numpy >=1.9.0
-    - msgpack-python >=0.3.0
+    - msgpack-python >=0.5.2
 
 test:
   imports:

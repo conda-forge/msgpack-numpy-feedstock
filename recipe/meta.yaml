@@ -28,9 +28,9 @@ test:
 
 about:
   home: https://github.com/lebedov/msgpack-numpy
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.rst
+  license_file: LICENSE.md
   summary: Numpy data serialization using msgpack
   description: |
     This package provides encoding and decoding routines that enable the

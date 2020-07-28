@@ -3,9 +3,9 @@ About msgpack-numpy
 
 Home: https://github.com/lebedov/msgpack-numpy
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Numpy data serialization using msgpack
 

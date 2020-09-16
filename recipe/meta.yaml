@@ -1,4 +1,4 @@
-{% set version = "0.4.6.1" %}
+{% set version = "0.4.7" %}
 
 package:
   name: msgpack-numpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/msgpack-numpy/msgpack-numpy-{{ version }}.tar.gz
-  sha256: 9f9b57abb2b155c2d3e411c2dd5b98f14998bd053a20c6ed0ab64a6ceb8ad51d
+  sha256: 8e975dd7dd9eb13cbf5e8cd90af1f12af98706bbeb7acfcbd8d558fd005a85d7
 
 build:
   number: 0

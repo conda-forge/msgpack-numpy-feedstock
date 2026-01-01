@@ -1,38 +1,38 @@
-{% set version = "0.4.8" %}
+schema_version: 1
+
+context:
+  version: 0.4.8
 
 package:
   name: msgpack-numpy
-  version: {{ version }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/msgpack-numpy/msgpack-numpy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/msgpack-numpy/msgpack-numpy-${{ version }}.tar.gz
   sha256: c667d3180513422f9c7545be5eec5d296dcbb357e06f72ed39cc683797556e69
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - numpy >=1.9.0
     - msgpack-python >=0.5.2
 
-test:
-  requires:
-    - python {{ python_min }}
-  imports:
-    - msgpack_numpy
-
+tests:
+  - python:
+      imports:
+        - msgpack_numpy
+      python_version: ${{ python_min }}.*
 about:
-  home: https://github.com/lebedov/msgpack-numpy
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE.md
   summary: Numpy data serialization using msgpack
   description: |
@@ -40,8 +40,9 @@ about:
     serialization and deserialization of numerical and array data types
     provided by numpy using the highly efficient msgpack format. Serialization
     of Python's native complex data types is also supported.
-  doc_url: https://pypi.python.org/pypi/msgpack-numpy
-  dev_url: https://github.com/lebedov/msgpack-numpy
+  homepage: https://github.com/lebedov/msgpack-numpy
+  repository: https://github.com/lebedov/msgpack-numpy
+  documentation: https://pypi.python.org/pypi/msgpack-numpy
 
 extra:
   recipe-maintainers:
